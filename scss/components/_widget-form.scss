@@ -1,0 +1,62 @@
+.widget--form {
+	// padding: 1rem;
+}
+
+.widget--form__control {
+	width: 100%;
+	margin-bottom: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	// padding: 0.2rem 1rem;
+	
+	button{
+		border: solid gray 1px;
+		border-radius: 7px;
+		padding: 0.5rem;
+	}
+	input[type="text"],
+	input[type="submit"] {
+		width: 100%;
+		border: solid gray 1px;
+		border-radius: 7px;
+		padding: 0.5rem;
+		
+	}
+	textarea {
+		width: 100%;
+		border: solid gray 1px;
+		border-radius: 7px;
+		padding: 0.5rem;
+	}
+	select {
+		width: 100%;
+		border: solid gray 1px;
+		border-radius: 7px;
+		padding: 0.5rem;		
+	}
+}
+
+.call2Action {
+	color: $white;
+	background: $primary-color;
+	cursor: pointer;
+}
+
+.btn--settings {
+	padding: 1rem 0 !important;
+	color: $white;
+}
+
+.control-checkbox {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-col {
+	width: 48%;
+	&>* {
+		width: 100%;
+
+	}
+}

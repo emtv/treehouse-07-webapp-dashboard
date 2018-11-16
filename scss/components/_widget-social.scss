@@ -1,0 +1,70 @@
+.social--inner {
+	border: solid #e9e9e9 1px;
+	background-color: #e9e9e9; 
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 1rem;
+}
+
+.social-ico {
+	border: solid $secondary-color 1px;
+	background: $secondary-color;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px; 	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	img {
+		padding: 15px;
+		width: 50%;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.social-number {
+	width: 70%;
+	height: 100%;
+	.number--title {
+		display: block;
+	}
+}
+
+.number--title {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.title__social {
+	margin: 0;
+	width: 100%;
+}
+
+
+.title__number {
+	margin: 0;
+	width: 100%;
+	font-size: 3rem;
+}
+
+@media only screen and (max-width: 767px) {
+
+	.social-ico {
+		width: 65px;
+		height: 65px;
+	}
+
+	.social-number {
+		padding-left: 2rem;
+	}
+
+	.title__number {
+		font-size: 2.5rem;
+	}
+
+}

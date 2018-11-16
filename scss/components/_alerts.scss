@@ -1,0 +1,109 @@
+.dashboard__alerts {
+	padding: 0 1rem;
+}
+
+.alert--item {
+	background-color: $primary-color;
+	border-radius: 5px; 
+	color: $white;
+	padding: 0.5rem 1rem;
+	margin: 1rem 0;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.alert{
+	&--item__text p {
+		margin: 0;
+
+	}
+	&--item__close p {
+		margin: 0;
+	}
+}
+
+
+.alert-close {
+	cursor: pointer;
+}
+//BELL NOTIFICACIONS
+
+.ding-on {
+	transform: rotate(15deg);
+	transition: ease .2s;
+}
+
+.ding-off {
+	transform: rotate(0deg);
+	transition: ease .2s;
+}
+
+#group_notificacion {
+	background: #e6e6e6;
+	position: absolute;
+	width: 20%;
+	right: 15%;
+	padding: 0.4rem;
+	top: 100%;
+	border-radius: 5px;
+}
+
+.notificacion--item {
+	/* border: solid red; */
+	display: flex;
+	align-items: center;
+	background: #e6e6e6;
+	border-bottom: solid 1px #c7c7c7;
+}
+
+.notificacion--item .alert-close p{
+	padding: 0.5rem;
+}
+
+.item__text {
+	font-size: 12px;
+}
+
+//drop
+
+/* Dropdown Button */
+.dropbtn {
+	color: white;
+	border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 250px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content .notificacion--item {
+	padding: 0 1rem;
+	text-decoration: none;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content .notificacion--item:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+// .dropdown:hover .dropdown-content {display: block;}
+.dropdown-active {
+	display: block;
+}
+
+.dropdown-disable {
+	display: none;
+}

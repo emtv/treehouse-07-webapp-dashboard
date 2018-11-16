@@ -1,0 +1,9 @@
+.container {
+	width: 100%;
+	max-width: 100%;
+	overflow: hidden;
+	@include desktop_view {
+		// max-width: 100%;
+		margin: 0 auto;
+	}
+}

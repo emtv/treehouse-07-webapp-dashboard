@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="lib/normalize/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Nunito:400,700,900"/>
+    <title>WebApp Dashboard</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="header">
+        <div class="logo"><img src="images/logo.jpg" alt=""/></div>
+        <div class="bar-status">
+          <div class="notification dropdown">
+            <div class="dropbtn ding-on" id="bell"></div>
+            <div class="dropdown-content dropdown-active" id="group_notificacion">
+              <div class="notificacion--item">
+                <div class="item__text">
+                  <p> First ipsum dolor sit amet, consectetur adipisicing elit ...</p>
+                </div>
+                <div class="alert-close bell-close">
+                  <p>x	</p>
+                </div>
+              </div>
+              <div class="notificacion--item">
+                <div class="item__text">
+                  <p> Second ipsum dolor sit amet, consectetur adipisicing elit ...</p>
+                </div>
+                <div class="alert-close bell-close">
+                  <p>x	</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="avatar">
+            <div class="avatar-img"><img src="images/member-1.jpg" alt=""/></div>
+            <div class="avatar-name">
+              <p>Jhon Doe</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-container">
+        <div class="dashboard-nav">
+          <ul>
+            <li> <a href="#"><img class="nav-icon" src="icons/icon-dashboard.svg" alt="Overview"/></a></li>
+            <li><a href="#"><img class="nav-icon" src="icons/icon-members.svg" alt="Users"/></a></li>
+            <li><a href="#"><img class="nav-icon" src="icons/icon-visits.svg" alt="Social"/></a></li>
+            <li><a href="#"><img class="nav-icon" src="icons/icon-settings.svg" alt="Settings"/></a></li>
+          </ul>
+        </div>
+        <div class="dashboard-primary">
+          <div class="dashboard-primary__headerControls">
+            <div class="dashboard--row">
+              <div class="dashboard--tagTitle">
+                <h3>Dashboard</h3>
+              </div>
+              <div class="dashboard--searchBox">
+                <input type="text" placeholder="Search"/>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-content">
+            <div class="dashboard__alerts">
+              <div class="alert--item">
+                <div class="alert--item__text">
+                  <p><span>Alert </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum a, eius consequatur delectus.</p>
+                </div>
+                <div class="alert-close alert--item__close">
+                  <p>x</p>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard__widget--container">
+              <div class="dashboard__widget--row">
+                <div class="dashboard__widget--12">
+                  <canvas id="traffic"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard__widget--container">
+              <div class="dashboard__widget--row">
+                <div class="dashboard__widget--6">
+                  <div class="widget--content">
+                    <canvas id="daily"></canvas>
+                  </div>
+                </div>
+                <div class="dashboard__widget--6 border-middle">
+                  <div class="widget--content">
+                    <canvas id="mobile"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard__widget--container">
+              <div class="dashboard__widget--row">
+                <h2>Social Stats</h2>
+              </div>
+              <div class="dashboard__widget--row">
+                <div class="dashboard__widget--3 widget-social__twitter">
+                  <div class="social--inner">
+                    <div class="social-ico"><img src="icons/icon-twitter.svg" alt="Twitter"/></div>
+                    <div class="social-number">
+                      <div class="number--title">
+                        <h4 class="title__social">Twitter</h4>
+                        <p class="title__number">10,345</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dashboard__widget--3 widget-social__facebook">
+                  <div class="social--inner">
+                    <div class="social-ico"><img src="icons/icon-facebook.svg" alt="Twitter"/></div>
+                    <div class="social-number">
+                      <div class="number--title">
+                        <h4 class="title__social">Facebook</h4>
+                        <p class="title__number">8,739</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dashboard__widget--3 widget-social__googleplus">
+                  <div class="social--inner">
+                    <div class="social-ico"><img src="icons/icon-google-plus.svg" alt="Twitter"/></div>
+                    <div class="social-number">
+                      <div class="number--title">
+                        <h4 class="title__social">Google+</h4>
+                        <p class="title__number">2,530</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard__widget--container">
+              <div class="dashboard__widget--row">
+                <div class="dashboard__widget--6" id="dashboard__newMembers">
+                  <div class="widget--content widget--left">
+                    <h2>New Members</h2>
+                    <div class="row-member">
+                      <div class="member-data">
+                        <div class="member--avatar"><img src="images/member-1.jpg" alt=""/></div>
+                        <div class="member--details">
+                          <p class="details__name">Victoria Chambers</p>
+                          <p class="details__email">victoria.chamber50@example.com</p>
+                        </div>
+                      </div>
+                      <div class="member-date">
+                        <p>10/15/15</p>
+                      </div>
+                    </div>
+                    <div class="row-member">
+                      <div class="member-data">
+                        <div class="member--avatar"><img src="images/member-1.jpg" alt=""/></div>
+                        <div class="member--details">
+                          <p class="details__name">Victoria Chambers</p>
+                          <p class="details__email">victoria.chamber50@example.com</p>
+                        </div>
+                      </div>
+                      <div class="member-date">
+                        <p>10/15/15</p>
+                      </div>
+                    </div>
+                    <div class="row-member">
+                      <div class="member-data">
+                        <div class="member--avatar"><img src="images/member-1.jpg" alt=""/></div>
+                        <div class="member--details">
+                          <p class="details__name">Victoria Chambers</p>
+                          <p class="details__email">victoria.chamber50@example.com</p>
+                        </div>
+                      </div>
+                      <div class="member-date">
+                        <p>10/15/15</p>
+                      </div>
+                    </div>
+                    <div class="row-member">
+                      <div class="member-data">
+                        <div class="member--avatar"><img src="images/member-1.jpg" alt=""/></div>
+                        <div class="member--details">
+                          <p class="details__name">Victoria Chambers</p>
+                          <p class="details__email">victoria.chamber50@example.com</p>
+                        </div>
+                      </div>
+                      <div class="member-date">
+                        <p>10/15/15</p>
+                      </div>
+                    </div>
+                    <div class="row-member">
+                      <div class="member-data">
+                        <div class="member--avatar"><img src="images/member-1.jpg" alt=""/></div>
+                        <div class="member--details">
+                          <p class="details__name">Victoria Chambers</p>
+                          <p class="details__email">victoria.chamber50@example.com</p>
+                        </div>
+                      </div>
+                      <div class="member-date">
+                        <p>10/15/15</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dashboard__widget--6 border-middle" id="dashboard__recentActivity">
+                  <div class="widget--content widget--right">
+                    <h2>Recent Activity</h2>
+                    <div class="row-member">
+                      <div class="member-data">
+                        <div class="member--avatar"><img src="images/member-1.jpg" alt=""/></div>
+                        <div class="member--details">
+                          <p class="details__activity">Victoria Chambers commented on YourApp's SEO Tips</p>
+                          <p class="details__time">4 hours ago</p>
+                        </div>
+                      </div>
+                      <div class="member-arrow">
+                        <p>></p>
+                      </div>
+                    </div>
+                    <div class="row-member">
+                      <div class="member-data">
+                        <div class="member--avatar"><img src="images/member-1.jpg" alt=""/></div>
+                        <div class="member--details">
+                          <p class="details__activity">Victoria Chambers commented on YourApp's SEO Tips</p>
+                          <p class="details__time">4 hours ago</p>
+                        </div>
+                      </div>
+                      <div class="member-arrow">
+                        <p>></p>
+                      </div>
+                    </div>
+                    <div class="row-member">
+                      <div class="member-data">
+                        <div class="member--avatar"><img src="images/member-1.jpg" alt=""/></div>
+                        <div class="member--details">
+                          <p class="details__activity">Victoria Chambers commented on YourApp's SEO Tips</p>
+                          <p class="details__time">4 hours ago</p>
+                        </div>
+                      </div>
+                      <div class="member-arrow">
+                        <p>></p>
+                      </div>
+                    </div>
+                    <div class="row-member">
+                      <div class="member-data">
+                        <div class="member--avatar"><img src="images/member-1.jpg" alt=""/></div>
+                        <div class="member--details">
+                          <p class="details__activity">Victoria Chambers commented on YourApp's SEO Tips</p>
+                          <p class="details__time">4 hours ago</p>
+                        </div>
+                      </div>
+                      <div class="member-arrow">
+                        <p>></p>
+                      </div>
+                    </div>
+                    <div class="row-member">
+                      <div class="member-data">
+                        <div class="member--avatar"><img src="images/member-1.jpg" alt=""/></div>
+                        <div class="member--details">
+                          <p class="details__activity">Victoria Chambers commented on YourApp's SEO Tips</p>
+                          <p class="details__time">4 hours ago</p>
+                        </div>
+                      </div>
+                      <div class="member-arrow">
+                        <p>></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard__widget--container">
+              <div class="dashboard__widget--row">
+                <div class="dashboard__widget--6">
+                  <div class="widget--content widget--left">
+                    <h2>Message User</h2>
+                    <form class="widget--form" id="userMessage">
+                      <div class="widget--form__control autocomplete">
+                        <input id="searchMember" type="text" placeholder="Search for user" required="required"/>
+                      </div>
+                      <div class="widget--form__control">
+                        <textarea placeholder="Mesage for user" rows="8"></textarea>
+                      </div>
+                      <div class="widget--form__control">
+                        <input class="call2Action btn--settings" type="submit" value="Send"/>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="dashboard__widget--6 border-middle">
+                  <div class="widget--content widget--right">
+                    <h1>Settings</h1>
+                    <div class="widget--form">
+                      <div class="widgte-form--checkbox">
+                        <div class="widget--form__control">
+                          <div class="control-checkbox">
+                            <label>Send Email Notifications</label>
+                            <div class="onoffswitch">
+                              <input class="onoffswitch-checkbox" id="myEmailSwitch" type="checkbox" name="onoffswitch"/>
+                              <label class="onoffswitch-label" for="myEmailSwitch"><span class="onoffswitch-inner"></span><span class="onoffswitch-switch"></span></label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="widget--form__control">
+                          <div class="control-checkbox">
+                            <label>Set Profile to Public</label>
+                            <div class="onoffswitch">
+                              <input class="onoffswitch-checkbox" id="myonoffswitch" type="checkbox" name="onoffswitch"/>
+                              <label class="onoffswitch-label" for="myonoffswitch"><span class="onoffswitch-inner"></span><span class="onoffswitch-switch"></span></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="widget--form__control">
+                        <select id="timezone" name="timezone">
+                          <option>Select Timezone</option>
+                          <option>GTM-5</option>
+                          <option>GTM-4</option>
+                          <option>GTM-3</option>
+                          <option>GTM-2</option>
+                          <option>GTM-1</option>
+                          <option>GTM-0</option>
+                        </select>
+                      </div>
+                      <div class="widget--form__control">
+                        <div class="form-col">
+                          <input class="call2Action btn--settings" id="saveSettings" type="submit" value="Save"/>
+                        </div>
+                        <div class="form-col">
+                          <button class="btn--settings" id="cancelSettings">Cancel</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content"></div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+      <script src="js/app.js"></script>
+    </footer>
+  </body>
+</html>

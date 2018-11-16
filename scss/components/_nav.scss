@@ -1,0 +1,12 @@
+.dashboard {
+	&-container{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&-nav {
+		width: 10% ;
+	}
+	&-primary {
+		width: 90%;
+	}
+}
