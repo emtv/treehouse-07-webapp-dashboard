@@ -39,6 +39,16 @@
           justify-content: space-between;
 }
 
+.logo {
+  width: 10%;
+}
+
+.logo img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+
 .bar-status {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,7 +336,7 @@
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border-bottom: solid 1px #808080;
+  border-bottom: solid 1px #d8d8d8;
 }
 
 .dashboard__widget--row {
@@ -385,7 +395,7 @@
 }
 
 .border-middle {
-  border-left: solid gray 1px;
+  border-left: solid #d8d8d8 1px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -474,7 +484,8 @@
 }
 
 .social--inner {
-  border: solid #e9e9e9 1px;
+  border: solid #d8d8d8 1px;
+  border-radius: 7px;
   background-color: #e9e9e9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -529,12 +540,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem 0;
+  padding: 1rem 0 0 1rem;
 }
 
 .title__social {
   margin: 0;
   width: 100%;
+  color: #7477bf;
 }
 
 .title__number {
@@ -640,29 +652,38 @@
 }
 
 .widget--form__control button {
-  border: solid gray 1px;
+  border: solid #d8d8d8 1px;
   border-radius: 7px;
   padding: 0.5rem;
+  background: #a3a3a3;
 }
 
-.widget--form__control input[type="text"],
+.widget--form__control input[type="text"] {
+  width: 100%;
+  border: solid #d8d8d8 1px;
+  border-radius: 7px;
+  padding: 0.5rem;
+  background: #f3f3f3;
+}
+
 .widget--form__control input[type="submit"] {
   width: 100%;
-  border: solid gray 1px;
+  border: solid #d8d8d8 1px;
   border-radius: 7px;
   padding: 0.5rem;
 }
 
 .widget--form__control textarea {
   width: 100%;
-  border: solid gray 1px;
+  border: solid #d8d8d8 1px;
   border-radius: 7px;
   padding: 0.5rem;
+  background: #f3f3f3;
 }
 
 .widget--form__control select {
   width: 100%;
-  border: solid gray 1px;
+  border: solid #d8d8d8 1px;
   border-radius: 7px;
   padding: 0.5rem;
 }
@@ -784,7 +805,7 @@
 }
 
 .widgte-form--checkbox {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .autocomplete {
@@ -823,4 +844,10 @@
   /*when navigating through the items using the arrow keys:*/
   background-color: DodgerBlue !important;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 767px) {
+  .widgte-form--checkbox {
+    margin-bottom: 3rem;
+  }
 }

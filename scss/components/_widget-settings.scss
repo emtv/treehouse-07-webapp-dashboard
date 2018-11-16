@@ -3,7 +3,7 @@
 }
 
 .widgte-form--checkbox {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .autocomplete {
@@ -41,4 +41,10 @@
   /*when navigating through the items using the arrow keys:*/
   background-color: DodgerBlue !important; 
   color: #ffffff; 
+}
+
+@media only screen and (max-width: 767px) {
+  .widgte-form--checkbox {
+    margin-bottom: 3rem;
+  }
 }

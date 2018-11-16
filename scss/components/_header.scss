@@ -5,6 +5,16 @@
 	justify-content: space-between;
 }
 
+.logo { 
+	width: 10%;
+	img {
+   		display: block;
+	    margin: 0 auto;
+    	margin-top: 0.5rem;
+	}
+}
+
+
 .bar-status {
 	display: flex;
 	justify-content: space-around;
