@@ -12,8 +12,8 @@
 	border: solid $secondary-color 1px;
 	background: $secondary-color;
 	border-radius: 50%;
-	width: 100px;
-	height: 100px; 	
+	width: 65px;
+	height: 65px; 	
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -28,6 +28,7 @@
 .social-number {
 	width: 70%;
 	height: 100%;
+	padding-left: 2rem;
 	.number--title {
 		display: block;
 	}
@@ -51,22 +52,12 @@
 .title__number {
 	margin: 0;
 	width: 100%;
-	font-size: 3rem;
+	font-size: 2.5rem;
 }
 
-@media only screen and (max-width: 767px) {
 
-	.social-ico {
-		width: 65px;
-		height: 65px;
-	}
 
-	.social-number {
-		padding-left: 2rem;
-	}
 
-	.title__number {
-		font-size: 2.5rem;
-	}
 
-}
+
+

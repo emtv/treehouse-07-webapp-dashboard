@@ -1,10 +1,3 @@
-.classo {
-	display: none;
-}
-
-.widgte-form--checkbox {
-  margin-bottom: 5rem;
-}
 
 .autocomplete {
   /*the container must be positioned relative:*/
@@ -43,8 +36,7 @@
   color: #ffffff; 
 }
 
-@media only screen and (max-width: 767px) {
-  .widgte-form--checkbox {
-    margin-bottom: 3rem;
-  }
+.widgte-form--checkbox {
+  margin-bottom: 3rem;
 }
+

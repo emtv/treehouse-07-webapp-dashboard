@@ -1,11 +1,43 @@
-header {
+.header {
 	grid-area: header;
-}
-
-footer {
-	grid-area: footer;
 }
 
 .dashboard-nav {
 	grid-area: navigation;
+}
+
+.dashboard-primary {
+	grid-area: primary;	
+}
+
+#traffic {
+	grid-area: chart-traffic;
+}
+
+#daily {
+	grid-area: chart-daily;
+}
+
+#mobile {
+	grid-area: chart-mobile;
+}
+
+.social--inner {
+	grid-area: social;	
+}
+
+#dashboard__newMembers {
+	grid-area: new-members;
+}
+
+#dashboard__recentActivity {
+	grid-area: recert-activity;
+}
+
+#messageUser {
+	grid-area: message-user;
+}
+
+#settingsUser {
+	grid-area: settings-user;
 }

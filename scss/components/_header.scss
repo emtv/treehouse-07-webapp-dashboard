@@ -67,40 +67,4 @@
 	}
 
 
-@media only screen and (min-width: 767px) {
 
-
-	.header {
-		height: 60px;
-		background-color: $primary-color;
-		display: flex;
-		justify-content: space-between;
-	}
-
-
-.logo { 
-	width: 10%;
-	img {
-		display: block;
-		margin: 0 auto;
-		margin-top: 0.5rem;
-	}
-}
-
-.bar-status {
-	width: 25%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	// border: solid red 1px;
-	
-	.notification{
-		margin-right: 1.8rem;
-	}
-
-}
-
-
-
-
-}
