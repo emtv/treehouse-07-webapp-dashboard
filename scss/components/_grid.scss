@@ -1,3 +1,11 @@
-.grid {
-	display: grid;
+header {
+	grid-area: header;
+}
+
+footer {
+	grid-area: footer;
+}
+
+.dashboard-nav {
+	grid-area: navigation;
 }

@@ -375,6 +375,18 @@
   display: none;
 }
 
+header {
+  grid-area: header;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.dashboard-nav {
+  grid-area: navigation;
+}
+
 .dashboard__widget--container {
   display: -webkit-box;
   display: -ms-flexbox;
